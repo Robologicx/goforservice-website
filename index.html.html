@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102f2b">
+<meta name="description" content="GoForService is coming soon — post a home-service request, compare provider offers and hire the right professional. Launching in Bahawalpur, Pakistan.">
+<title>GoForService | Post a Job. Compare Offers. Hire.</title>
+<style>
+:root{--forest:#102f2b;--green:#176b57;--mint:#e8f5ee;--lime:#c9f36c;--ink:#17312d;--muted:#64756f;--line:#e1eae5;--white:#fff;--bg:#f8fbf9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+header{height:78px;background:#ffffffeb;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:9;backdrop-filter:blur(12px)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-size:1.22rem;font-weight:900;letter-spacing:-.04em;color:var(--forest)}.mark{width:38px;height:38px;border-radius:12px;background:var(--forest);color:var(--lime);display:grid;place-items:center;font-weight:950}.links{display:flex;gap:26px;align-items:center;color:#586c65;font-size:.9rem}.links a:hover{color:var(--green)}.status{display:inline-flex;align-items:center;gap:8px;border:1px solid #dce9e1;background:#fff;border-radius:99px;padding:8px 13px;font-size:.78rem;font-weight:800;color:var(--green)}.pulse{width:8px;height:8px;border-radius:50%;background:#7fba48;box-shadow:0 0 0 4px #eaf5df}
+.hero{padding:82px 0 72px;overflow:hidden;background:radial-gradient(circle at 82% 24%,#d8f0df 0,transparent 28%),linear-gradient(135deg,#f7fbf8,#eaf5ee);position:relative}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:45px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;font-weight:900;color:var(--green);margin:0 0 16px}h1{font-size:clamp(3.1rem,6.3vw,5.6rem);line-height:.98;letter-spacing:-.07em;color:var(--forest);margin:0;max-width:690px}h1 em{font-style:normal;color:#4b946b}.lead{font-size:1.12rem;color:#5d7069;max-width:590px;margin:23px 0 26px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:13px;font-weight:850;font-size:.91rem;transition:.2s;border:1px solid transparent}.primary{background:var(--forest);color:#fff;box-shadow:0 9px 22px #102f2b25}.primary:hover{transform:translateY(-2px);background:#1a5148}.secondary{background:#fff;border-color:#dce8e1;color:var(--forest)}.secondary:hover{border-color:#8fb6a3}.micro{font-size:.8rem;color:#75857e;margin-top:16px}
+.mock{min-height:430px;display:grid;place-items:center;position:relative}.halo{position:absolute;width:360px;height:360px;border-radius:50%;background:linear-gradient(140deg,#d7f1df,#b8e2c9)}.phone{position:relative;width:260px;min-height:425px;border:9px solid #173b34;border-radius:36px;background:#fff;z-index:2;padding:20px 14px;box-shadow:0 28px 60px #0d322b35;transform:rotate(4deg)}.notch{position:absolute;top:-1px;left:calc(50% - 43px);width:86px;height:15px;background:#173b34;border-radius:0 0 12px 12px}.phone-top{font-size:.65rem;color:#819089;display:flex;justify-content:space-between;margin:8px 2px 18px}.phone h3{font-size:1.12rem;line-height:1.15;color:var(--forest);margin:0}.phone .hint{font-size:.62rem;color:#8b9992}.search{margin:14px 0;padding:10px;border-radius:10px;background:#f1f6f3;color:#8b9992;font-size:.65rem}.budget{border:1px solid #e4ede7;border-radius:12px;padding:11px;margin:10px 0}.budget small{font-size:.58rem;color:#82918a}.budget strong{display:block;font-size:1.25rem;color:var(--green)}.offer{display:flex;gap:9px;align-items:center;border:1px solid #e6eee9;border-radius:11px;padding:9px;margin-top:8px}.avatar{width:34px;height:34px;border-radius:10px;background:#e5f3e9;display:grid;place-items:center}.offer b{display:block;font-size:.62rem;color:#28483e}.offer small{display:block;font-size:.54rem;color:#83918a}.price{margin-left:auto;font-size:.68rem;font-weight:900;color:var(--green)}.float{position:absolute;z-index:3;background:#fff;border:1px solid #e0eae4;border-radius:14px;padding:12px 15px;box-shadow:0 14px 35px #123b301b;font-size:.72rem}.float b{display:block;color:var(--forest);font-size:.82rem}.f1{right:-2%;top:16%}.f2{left:-2%;bottom:12%}
+section{padding:76px 0}.head{text-align:center;max-width:710px;margin:0 auto 38px}.head h2{font-size:clamp(2rem,4vw,3.15rem);line-height:1.08;letter-spacing:-.055em;color:var(--forest);margin:0 0 13px}.head p:last-child{color:var(--muted);margin:0}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 8px 25px #123b3008}.ico{width:45px;height:45px;border-radius:13px;background:var(--mint);display:grid;place-items:center;font-size:1.35rem;margin-bottom:14px}.card h3{font-size:1.05rem;color:var(--forest);margin:0 0 7px}.card p{font-size:.89rem;color:var(--muted);margin:0}
+.how{background:#edf6f0}.stepno{font-size:.75rem;letter-spacing:.13em;color:#5c9b70;font-weight:950}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.step{background:#ffffffc9;border:1px solid #dceae1;border-radius:17px;padding:24px}.step h3{color:var(--forest);margin:9px 0 7px}.step p{color:var(--muted);font-size:.9rem;margin:0}
+.band{background:var(--forest);color:#fff}.band .head h2{color:#fff}.band .head p:last-child{color:#c2d8cf}.trustgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.trust{border:1px solid #ffffff25;background:#ffffff0b;border-radius:16px;padding:21px}.trust h3{margin:0 0 7px;font-size:1rem}.trust p{margin:0;color:#c4d8d0;font-size:.86rem}.note{text-align:center;color:#b7ccc3;font-size:.74rem;max-width:780px;margin:22px auto 0}
+.cta{padding:78px 0}.cta-box{background:linear-gradient(135deg,#e6f5eb,#f8fbf8);border:1px solid #d9e9df;border-radius:25px;padding:48px 25px;text-align:center}.tag{display:inline-block;padding:7px 12px;background:#fff;border:1px solid #dce9e1;border-radius:99px;color:#397454;font-weight:850;font-size:.75rem}.cta h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;letter-spacing:-.055em;color:var(--forest);margin:15px 0}.cta-box>p{max-width:680px;margin:0 auto 22px;color:var(--muted)}.audiences{display:grid;grid-template-columns:1fr 1fr;gap:15px;text-align:left;margin-top:25px}.aud{background:#fff;border:1px solid var(--line);border-radius:15px;padding:20px}.aud h3{color:var(--forest);margin:0 0 6px}.aud p{font-size:.87rem;color:var(--muted);margin:0}
+footer{background:#092923;color:#d6e5df;padding:32px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.foot strong{color:#fff}.foot small{color:#a9c2b8}.footlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:.82rem}.contact{font-size:.82rem;color:#d5e5df}.disclaimer{font-size:.7rem;color:#a9c2b8;margin:16px 0 0;max-width:900px}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:15px}.mock{min-height:405px}.grid3,.steps,.trustgrid{grid-template-columns:repeat(2,1fr)}.f1{right:4%}.f2{left:4%}}
+@media(max-width:600px){.wrap{width:calc(100% - 30px)}header{height:68px}.links{display:none}.hero{padding:55px 0 35px}h1{font-size:3.25rem}.lead{font-size:1rem}.mock{min-height:365px}.halo{width:280px;height:280px}.phone{transform:scale(.86) rotate(3deg)}.f1{right:0;top:7%}.f2{left:0;bottom:6%}section{padding:60px 0}.grid3,.steps,.trustgrid,.audiences{grid-template-columns:1fr}.cta-box{padding:36px 18px}.foot{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#"><span class="mark">G</span>GoForService</a>
+<nav class="links"><a href="#services">Services</a><a href="#how">How it works</a><a href="#safety">Trust & safety</a><a href="#launch">Coming soon</a></nav>
+<a class="status" href="#launch"><span class="pulse"></span> Launching soon</a>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<p class="eyebrow">The smarter way to hire local services</p>
+<h1>Post a job.<br><em>Compare offers.</em><br>Hire your way.</h1>
+<p class="lead">Need an electrician, plumber, AC technician or another home-service professional? Tell us what you need and your expected budget. Compare provider offers, discuss the details and choose the right professional.</p>
+<div class="actions"><a class="btn primary" href="#launch">Be first to know <span>→</span></a><a class="btn secondary" href="#how">How it works</a></div>
+<p class="micro">Coming soon in Bahawalpur, Pakistan · Customer and provider marketplace</p>
+</div>
+<div class="mock" aria-label="Illustrative preview of the GoForService app">
+<div class="halo"></div><div class="phone"><div class="notch"></div>
+<div class="phone-top"><span>9:41</span><span>● ● ●</span></div>
+<h3>What service<br>do you need?</h3><div class="hint">Post your request and receive offers</div>
+<div class="search">⌕ &nbsp; Describe your service...</div>
+<div class="budget"><small>YOUR EXPECTED BUDGET</small><strong>Rs. 3,000</strong><small>Example budget · You choose the final offer</small></div>
+<div class="hint" style="font-weight:800;margin:12px 2px 5px">PROVIDER OFFERS</div>
+<div class="offer"><div class="avatar">👨‍🔧</div><div><b>Electrician</b><small>Profile · Experience · Reviews</small></div><span class="price">Rs 2,800</span></div>
+<div class="offer"><div class="avatar">🧰</div><div><b>Service professional</b><small>Profile · Availability</small></div><span class="price">Rs 3,200</span></div>
+<div class="hint" style="text-align:center;margin-top:12px">Illustrative app preview</div>
+</div>
+<div class="float f1">↔ <b>Compare provider offers</b>Choose what suits you</div>
+<div class="float f2">✓ <b>Your choice matters</b>Accept or negotiate</div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<div class="head"><p class="eyebrow">Everyday help, one marketplace</p><h2>Find the right professional<br>for the job.</h2><p>GoForService is planned to bring customers and local service providers together in one convenient place.</p></div>
+<div class="grid3">
+<article class="card"><div class="ico">⚡</div><h3>Electricians</h3><p>Electrical faults, switches, lights, fans, wiring and fittings.</p></article>
+<article class="card"><div class="ico">🔧</div><h3>Plumbers</h3><p>Leaks, taps, toilets, pumps, drainage and pipe fitting.</p></article>
+<article class="card"><div class="ico">❄️</div><h3>AC technicians</h3><p>AC service, maintenance, repair and installation.</p></article>
+<article class="card"><div class="ico">🖌️</div><h3>Painters</h3><p>Room painting, touch-ups, wall preparation and finishing.</p></article>
+<article class="card"><div class="ico">🪚</div><h3>Carpenters</h3><p>Furniture repair, doors, cabinets, shelves and woodwork.</p></article>
+<article class="card"><div class="ico">🧹</div><h3>Cleaning</h3><p>Home cleaning, kitchen and bathroom cleaning, deep cleaning.</p></article>
+</div></div></section>
+
+<section class="how" id="how"><div class="wrap">
+<div class="head"><p class="eyebrow">A customer-first marketplace</p><h2>You set the request.<br>Providers make their offers.</h2><p>Inspired by open-offer marketplaces, adapted for home services where the job scope and materials matter.</p></div>
+<div class="steps">
+<article class="step"><div class="stepno">01 · POST</div><h3>Describe your job</h3><p>Select a category, explain the work, add photos if helpful, choose a time and enter your expected budget — or ask for quotations.</p></article>
+<article class="step"><div class="stepno">02 · COMPARE</div><h3>Receive provider offers</h3><p>Providers can accept your budget, send a counter-offer or ask questions. Compare price, profile, experience, availability and reviews.</p></article>
+<article class="step"><div class="stepno">03 · CHOOSE</div><h3>Hire your preferred provider</h3><p>Discuss the scope, review the quotation and select the professional you want. The booking records the agreed work and price.</p></article>
+</div></div></section>
+
+<section class="band" id="safety"><div class="wrap">
+<div class="head"><p class="eyebrow" style="color:#c9f36c">Trust is part of the product</p><h2>Designed with safer home visits in mind.</h2><p>GoForService is being designed around clear provider identity, accountable bookings and customer control.</p></div>
+<div class="trustgrid">
+<article class="trust"><h3>Provider identity review</h3><p>Planned identity verification and provider profile review before access to eligible customer requests.</p></article>
+<article class="trust"><h3>SafeVisit arrival OTP</h3><p>A planned booking-specific code to help confirm the assigned technician at arrival.</p></article>
+<article class="trust"><h3>Named technician</h3><p>Customers are intended to see who is assigned to visit, including approved substitutions.</p></article>
+<article class="trust"><h3>Clear offers</h3><p>Compare proposed labour, visit fees, materials, exclusions and estimated duration.</p></article>
+<article class="trust"><h3>Customer-approved changes</h3><p>Changes to the technician, job scope or price should require customer approval.</p></article>
+<article class="trust"><h3>Reviews after jobs</h3><p>Planned reviews linked to completed bookings help customers assess service history.</p></article>
+</div>
+<p class="note">These are planned capabilities, not claims that every check is already active. Verification labels will state exactly what was checked. No marketplace can guarantee a risk-free visit.</p>
+</div></section>
+
+<section class="cta" id="launch"><div class="wrap"><div class="cta-box">
+<span class="tag">COMING SOON · BAHAWALPUR, PAKISTAN</span>
+<h2>Good service starts<br>with a better choice.</h2>
+<p>We are preparing GoForService — a marketplace where customers can post service needs, compare provider offers and choose who to hire.</p>
+<div class="actions" style="justify-content:center"><a class="btn primary" href="https://goforservice.com/">Visit GoForService.com ↗</a><a class="btn secondary" href="mailto:info@RoboLogicx.org?subject=GoForService%20launch%20enquiry">Contact the team</a></div>
+<div class="audiences">
+<div class="aud"><h3>Need a service?</h3><p>Get ready to post your job, compare offers and choose a local professional when the platform launches.</p></div>
+<div class="aud"><h3>Are you a service provider?</h3><p>Prepare to create a profile, receive relevant requests and submit offers to potential customers.</p></div>
+</div>
+</div></div></section>
+</main>
+<footer><div class="wrap">
+<div class="foot"><div><strong>GoForService</strong><br><small>Find. Compare. Hire.</small></div>
+<div class="footlinks"><a href="#services">Services</a><a href="#how">How it works</a><a href="#safety">Trust & safety</a><a href="https://goforservice.com/">goforservice.com</a></div>
+<div class="contact">WhatsApp: <a href="https://wa.me/923018777220">0301 8777220</a><br>Email: <a href="mailto:info@RoboLogicx.org">info@RoboLogicx.org</a></div>
+</div>
+<p class="disclaimer">GoForService is a planned home-services marketplace. Features, provider onboarding, verification and booking availability will be announced as they become operational. This website is for marketing and launch awareness; it does not currently accept service bookings. © <span id="year">2026</span> GoForService.</p>
+</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
