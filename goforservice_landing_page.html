@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GoForService connects customers with verified individual technicians and service companies for home, office and commercial services.">
+<title>GoForService | Find the right service professional</title>
+<style>
+:root{--navy:#101d36;--blue:#2368e8;--cyan:#21b6c7;--ink:#17243b;--muted:#64748b;--bg:#f5f8fc;--line:#e4eaf2;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-size:23px;font-weight:850;letter-spacing:-.8px;color:var(--navy)}.brand-logo{width:58px;height:58px;object-fit:contain;border-radius:8px}.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--muted);font-weight:700;margin-top:-5px}
+nav{display:flex;gap:25px;font-size:14px;font-weight:650;color:#40506a}nav a:hover{color:var(--blue)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:12px 18px;font-weight:750;font-size:14px;transition:.2s}.nav-cta,.primary{background:var(--blue);color:white;box-shadow:0 8px 20px #2368e82b}.nav-cta:hover,.primary:hover{background:#1554c8;transform:translateY(-1px)}
+.hero{background:radial-gradient(circle at 80% 10%,#2cb8c51c,transparent 28%),linear-gradient(135deg,#f4f8ff,#fff 60%);padding:86px 0 76px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#1758c8;background:#eaf1ff;border:1px solid #d8e5ff;border-radius:99px;padding:7px 12px;font-size:12px;font-weight:800;letter-spacing:.5px}.hero h1{font-size:clamp(42px,5vw,64px);line-height:1.06;letter-spacing:-2.6px;color:var(--navy);margin:20px 0}.hero h1 span{color:var(--blue)}.hero p{font-size:18px;color:#596a83;max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.secondary{border:1px solid #cbd6e5;background:#fff;color:var(--navy)}.secondary:hover{border-color:var(--blue);color:var(--blue)}.trustline{margin-top:27px;color:#687890;font-size:13px}
+.visual{background:linear-gradient(145deg,#122746,#1b4676);border-radius:28px;padding:25px;color:white;box-shadow:0 28px 65px #17365a2b;position:relative}.visual:before{content:"";position:absolute;inset:14px;border:1px solid #ffffff20;border-radius:20px;pointer-events:none}.visual-head{display:flex;justify-content:space-between;align-items:center;position:relative}.live{font-size:11px;background:#ffffff1b;padding:6px 10px;border-radius:99px}.job{position:relative;background:white;color:var(--ink);border-radius:17px;padding:17px;margin-top:18px}.jobtop{display:flex;justify-content:space-between;gap:12px;font-weight:800}.tag{font-size:11px;color:#087f69;background:#e6f8f3;border-radius:99px;padding:4px 8px}.job p{font-size:12px;color:var(--muted);margin:6px 0 13px}.offer{display:flex;align-items:center;gap:11px;border-top:1px solid var(--line);padding:12px 0}.avatar{width:36px;height:36px;border-radius:50%;background:#eaf1ff;color:#1d5acb;display:grid;place-items:center;font-weight:850}.offerinfo{flex:1;font-size:12px}.offerinfo b{display:block;font-size:13px}.price{font-weight:850;color:var(--navy)}.select{background:#eaf1ff;color:#1758c8;font-size:10px;font-weight:800;border-radius:7px;padding:5px 7px}.visual-foot{position:relative;display:flex;justify-content:space-between;font-size:11px;color:#d6e7ff;margin-top:15px}
+section{padding:78px 0}.section-head{text-align:center;max-width:740px;margin:0 auto 42px}.kicker{color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:1.6px;font-size:11px}.section-head h2{font-size:clamp(30px,4vw,43px);letter-spacing:-1.4px;color:var(--navy);line-height:1.15;margin:10px 0}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:18px;padding:25px;background:white;box-shadow:0 8px 25px #17243b08}.card-icon{width:46px;height:46px;border-radius:13px;background:#edf3ff;color:var(--blue);display:grid;place-items:center;font-size:22px;margin-bottom:16px}.card h3{margin:0 0 8px;color:var(--navy);font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+.bg{background:var(--bg)}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.service{background:white;border:1px solid var(--line);padding:17px;border-radius:14px;font-weight:700;font-size:14px}.service span{display:block;font-size:22px;margin-bottom:8px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}.step{padding:20px 16px;border:1px solid var(--line);border-radius:16px;background:white}.num{width:30px;height:30px;border-radius:50%;background:#eaf1ff;color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:13px}.step h3{font-size:15px;margin:13px 0 6px}.step p{font-size:12px;color:var(--muted);margin:0}
+.platforms{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.platform{border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;flex-direction:column;background:#fff}.platform .label{font-size:11px;color:var(--blue);font-weight:850;letter-spacing:1px;text-transform:uppercase}.platform h3{font-size:23px;color:var(--navy);margin:8px 0}.platform p{font-size:14px;color:var(--muted);margin:0 0 15px}.platform ul{padding-left:18px;color:#46566d;font-size:13px;flex:1}.platform li{margin:6px 0}.platform .actions{margin-top:12px}.smallnote{font-size:11px;color:#8a96a8;margin-top:10px}
+.download{background:linear-gradient(120deg,#10213d,#174d88);color:white;border-radius:24px;padding:38px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px}.download h2{font-size:31px;line-height:1.15;margin:0 0 10px}.download p{margin:0;color:#d4e3f7;font-size:14px}.download .btn{background:white;color:#164d9b}.download .btn[aria-disabled=true]{opacity:.7;cursor:not-allowed}
+.safety{display:grid;grid-template-columns:1fr 1fr;gap:18px}.safety .card{background:#f9fbff}.contact{background:#f4f8ff}.contactbox{max-width:760px;margin:auto;text-align:center}.contactbox h2{font-size:38px;color:var(--navy);margin:0 0 10px}.contactbox p{color:var(--muted)}footer{background:#0d1a30;color:#dce6f5;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.foot small{color:#9fb0c8}
+@media(max-width:850px){nav{display:none}.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.service-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.hero{padding:60px 0}.cards,.platforms,.safety{grid-template-columns:1fr}.download{grid-template-columns:1fr;padding:27px}.steps{grid-template-columns:1fr 1fr}.hero h1{letter-spacing:-1.7px}.nav{height:66px}.brand{font-size:20px}}
+
+.screenshot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:start}
+.screenshot-grid figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:17px;padding:10px;box-shadow:0 8px 25px #17243b0a}
+.screenshot-grid img{width:100%;height:360px;object-fit:contain;object-position:top;border-radius:11px;background:#f2f5fb}
+.screenshot-grid figcaption{font-size:13px;font-weight:750;text-align:center;padding:11px 5px 4px;color:var(--navy)}
+@media(max-width:850px){.screenshot-grid{grid-template-columns:repeat(2,1fr)}.screenshot-grid img{height:320px}}
+@media(max-width:480px){.screenshot-grid{grid-template-columns:1fr 1fr;gap:10px}.screenshot-grid img{height:245px}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home" aria-label="GoForService home"><img class="brand-logo" src="assets/goforservice-logo.png" alt="GoForService logo"><span>GoForService<small>YOUR SERVICE. YOUR CHOICE.</small></span></a>
+  <nav><a href="#how">How it works</a><a href="#services">Services</a><a href="#screenshots">Screenshots</a><a href="#apps">Apps & Portals</a><a href="#safety">Trust & Safety</a></nav>
+  <a class="nav-cta" href="#apps">Open platforms ↗</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+  <div><span class="eyebrow">● HOME · OFFICE · COMMERCIAL SERVICES</span>
+    <h1>Find the right professional. <span>On your terms.</span></h1>
+    <p>Post your service request, share your proposed budget and compare offers from eligible individual technicians and service companies. You choose who gets the job.</p>
+    <div class="actions"><a class="btn primary" href="#apps">Explore apps & portals</a><a class="btn secondary" href="#how">See how it works</a></div>
+    <div class="trustline">Launching from Bahawalpur, Pakistan · Built around choice, transparency and verified skills.</div>
+  </div>
+  <div class="visual" aria-label="Illustration of customer comparing provider offers">
+    <div class="visual-head"><b>GoForService</b><span class="live">● Request preview</span></div>
+    <div class="job"><div class="jobtop"><span>CCTV camera not working</span><span class="tag">Open for offers</span></div><p>Home service · Bahawalpur · Preferred visit: Tomorrow</p>
+      <div class="offer"><div class="avatar">AK</div><div class="offerinfo"><b>Approved technician</b>4.8 rating · CCTV skill</div><span class="price">Rs. 2,500</span><span class="select">VIEW</span></div>
+      <div class="offer"><div class="avatar">SC</div><div class="offerinfo"><b>Service company</b>Multi-service team · Verified company</div><span class="price">Rs. 3,000</span><span class="select">VIEW</span></div>
+      <div class="offer"><div class="avatar">MR</div><div class="offerinfo"><b>Approved technician</b>4.7 rating · CCTV skill</div><span class="price">Rs. 2,200</span><span class="select">VIEW</span></div>
+    </div><div class="visual-foot"><span>Compare scope, timing & warranty</span><span>Customer makes the choice →</span></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap"><div class="section-head"><div class="kicker">Simple marketplace flow</div><h2>From service request to completed job</h2><p>No automatic cheapest-provider selection. Real providers submit offers, and the customer approves the one they prefer.</p></div>
+<div class="steps">
+ <div class="step"><div class="num">1</div><h3>Post your request</h3><p>Choose a service, describe the work, add photos, location, preferred date and proposed budget.</p></div>
+ <div class="step"><div class="num">2</div><h3>Get eligible offers</h3><p>Matching checks approved provider status, service, technician skills, coverage and availability.</p></div>
+ <div class="step"><div class="num">3</div><h3>Compare proposals</h3><p>Review up to 3–5 genuine offers when available, including price, scope, timing and provider details.</p></div>
+ <div class="step"><div class="num">4</div><h3>Approve your choice</h3><p>You select an offer. The provider confirms availability before the booking is finalized.</p></div>
+ <div class="step"><div class="num">5</div><h3>Track the service</h3><p>See the assigned technician, use SafeVisit check-in, follow progress and confirm completion.</p></div>
+</div></div></section>
+
+<section class="bg" id="services"><div class="wrap"><div class="section-head"><div class="kicker">One marketplace · Multiple categories</div><h2>Services for homes, offices and businesses</h2><p>Service availability depends on approved providers and active coverage in your area.</p></div>
+<div class="service-grid">
+ <div class="service"><span>📹</span>CCTV & Smart Security</div><div class="service"><span>❄️</span>Air Conditioning</div><div class="service"><span>☀️</span>Solar Systems</div><div class="service"><span>⚡</span>Electrical Services</div>
+ <div class="service"><span>🚿</span>Plumbing</div><div class="service"><span>🛡️</span>Electric Fence</div><div class="service"><span>🚪</span>Gate Automation</div><div class="service"><span>🏠</span>Smart Home Automation</div>
+ <div class="service"><span>🔧</span>General Repairs</div><div class="service"><span>🎨</span>Painting & Renovation</div><div class="service"><span>🧰</span>Maintenance & Installation</div><div class="service"><span>＋</span>More local services</div>
+</div></div></section>
+
+
+<section class="bg" id="screenshots"><div class="wrap">
+<div class="section-head"><div class="kicker">Inside the apps</div><h2>GoForService app screenshots</h2>
+<p>Real interface screenshots supplied for the customer and partner experiences.</p></div>
+<div class="screenshot-grid">
+ <figure><img src="assets/customer-welcome.png" alt="GoForService welcome screen"><figcaption>Customer & worker welcome</figcaption></figure>
+ <figure><img src="assets/customer-login.png" alt="GoForService login screen"><figcaption>Account login</figcaption></figure>
+ <figure><img src="assets/partner-home.png" alt="GoForService partner home dashboard"><figcaption>Partner home dashboard</figcaption></figure>
+ <figure><img src="assets/partner-registration.png" alt="GoForService partner registration role selection"><figcaption>Partner registration and work type</figcaption></figure>
+</div></div></section>
+
+<section><div class="wrap"><div class="section-head"><div class="kicker">Built for every role</div><h2>One connected service ecosystem</h2><p>Separate experiences for customers, individual technicians, service companies and the GoForService operations team.</p></div>
+<div class="cards">
+ <article class="card"><div class="card-icon">👤</div><h3>Customer App</h3><p>Register, discover services, post jobs, set a proposed budget, compare offers, negotiate, approve a provider, track bookings, chat, use SafeVisit, pay and review.</p></article>
+ <article class="card"><div class="card-icon">🧑‍🔧</div><h3>Individual Provider App</h3><p>Apply for verification, submit identity and skill evidence, manage services and availability, receive matched requests, quote, manage bookings and record completed work.</p></article>
+ <article class="card"><div class="card-icon">🏢</div><h3>Company Dashboard</h3><p>Register and verify the company, activate multiple approved service categories, manage team members, receive eligible requests, submit quotations and assign approved technicians.</p></article>
+ <article class="card"><div class="card-icon">🦺</div><h3>Technician Experience</h3><p>See assigned jobs, customer-approved assignment details, visit schedule, SafeVisit check-in, work checklist, progress updates and completion reports.</p></article>
+ <article class="card"><div class="card-icon">🖥️</div><h3>Admin Portal</h3><p>Manage users, provider and company verification, individual technician skills, service catalog, requests, offers, bookings, disputes, payments, commissions, support and analytics.</p></article>
+ <article class="card"><div class="card-icon">🌐</div><h3>Web App</h3><p>Browser-based access for customers and service operations, with role-appropriate screens. The web experience connects to the same secured backend as the mobile apps.</p></article>
+</div></div></section>
+
+<section class="bg" id="apps"><div class="wrap"><div class="section-head"><div class="kicker">Access GoForService</div><h2>Apps, web experience & admin portal</h2><p>Use the available browser demos below. Production app downloads and live portal addresses should be added after release and deployment.</p></div>
+<div class="platforms">
+ <article class="platform"><div class="label">Customer experience · Live URL supplied</div><h3>Customer App · Web</h3><p>Open the GoForService customer experience in your browser.</p><ul><li>Service discovery and request posting</li><li>Proposed budget and provider offers</li><li>Offer comparison, booking and job tracking</li><li>Chat, SafeVisit and reviews where enabled</li></ul><div class="actions"><a class="btn primary" href="https://www.app.goforservice.com/" target="_blank" rel="noopener">Open Customer Web App ↗</a></div><div class="smallnote">Live application URL provided by GoForService.</div></article>
+ <article class="platform"><div class="label">Provider experience</div><h3>GoForService Partner · Web</h3><p>Access the provider web experience for individual technicians, company owners and assigned technicians.</p><ul><li>Individual and company onboarding</li><li>Services, skills and verification status</li><li>Request inbox, offers and bookings</li><li>Company team and technician assignment</li></ul><div class="actions"><a class="btn primary" href="https://www.app.goforservice.com/" target="_blank" rel="noopener">Open Provider Web App ↗</a></div><div class="smallnote">Uses the supplied GoForService app URL; available modules depend on account role.</div></article>
+ <article class="platform"><div class="label">Platform operations · Live URL supplied</div><h3>Admin Portal</h3><p>Open the GoForService administration portal to manage marketplace operations.</p><ul><li>Provider, company and skill approvals</li><li>Service catalog and request management</li><li>Bookings, support, disputes and finance</li><li>Reports, configuration and audit oversight</li></ul><div class="actions"><a class="btn primary" href="https://www.app.goforservice.com/admin/" target="_blank" rel="noopener">Open Admin Portal ↗</a></div><div class="smallnote">Admin access should be restricted to authorized accounts with strong authentication.</div></article>
+ <article class="platform"><div class="label">Android download · Release link supplied</div><h3>Download GoForService APK</h3><p>Download the Android application directly from the official GoForService GitHub release.</p><ul><li>Android APK package</li><li>Release tag: 1.1</li><li>For the matching GoForService app build</li></ul><div class="actions"><a class="btn primary" href="https://github.com/Robologicx/goforservice-website/releases/download/1.1/app-release.apk" target="_blank" rel="noopener">Download Android APK ↓</a></div><div class="smallnote" id="apk-note">Before installation, enable APK installation only for a trusted source and verify the release build.</div></article>
+</div>
+<div class="download" style="margin-top:24px"><div><h2>GoForService is online</h2><p>Open the web application, access the admin portal or install the Android APK using the official release link.</p></div><a class="btn" href="https://www.app.goforservice.com/" target="_blank" rel="noopener">Launch Web App ↗</a></div>
+</div></section>
+
+<section id="safety"><div class="wrap"><div class="section-head"><div class="kicker">Trust is part of the product</div><h2>Verification, assignment control & SafeVisit</h2><p>Marketplace trust depends on enforcing checks—not simply displaying a “verified” badge.</p></div>
+<div class="safety">
+ <article class="card"><h3>Separate approvals</h3><p>Company verification and technician verification are separate. Each technician must have individually approved skills. Companies receive requests only for approved active services.</p></article>
+ <article class="card"><h3>Customer-approved technician</h3><p>The customer can see the actual assigned technician. Replacing that technician requires customer approval before the replacement proceeds.</p></article>
+ <article class="card"><h3>SafeVisit check-in</h3><p>Booking-specific, expiring visit codes are validated by the backend and tied to the assigned technician. Visit events are recorded for oversight.</p></article>
+ <article class="card"><h3>Secure platform operations</h3><p>Role-based permissions, private identity documents, server-side booking and payment controls, audit logs and default-deny access rules are core requirements.</p></article>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap contactbox"><div class="kicker">GoForService · Bahawalpur, Pakistan</div><h2>Get the service you need.</h2><p>Customers can request services. Technicians and service companies can apply to join the marketplace. Availability depends on local rollout and provider approval.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="https://goforservice.com" target="_blank" rel="noopener">Visit GoForService.com ↗</a></div></div></section>
+</main>
+<footer><div class="wrap foot"><div><b>GoForService</b><br><small>Your service. Your choice.</small></div><small>© 2026 GoForService. All rights reserved.</small></div></footer>
+</body></html>
