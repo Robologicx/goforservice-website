@@ -24,18 +24,18 @@ section{padding:78px 0}.section-head{text-align:center;max-width:740px;margin:0 
 @media(max-width:850px){nav{display:none}.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.service-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.hero{padding:60px 0}.cards,.platforms,.safety{grid-template-columns:1fr}.download{grid-template-columns:1fr;padding:27px}.steps{grid-template-columns:1fr 1fr}.hero h1{letter-spacing:-1.7px}.nav{height:66px}.brand{font-size:20px}}
 
-.screenshot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:start}
+.screenshot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,240px));gap:18px;align-items:start;justify-content:center;margin-inline:auto}
 .screenshot-grid figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:17px;padding:10px;box-shadow:0 8px 25px #17243b0a}
 .screenshot-grid img{width:100%;height:360px;object-fit:contain;object-position:top;border-radius:11px;background:#f2f5fb}
 .screenshot-grid figcaption{font-size:13px;font-weight:750;text-align:center;padding:11px 5px 4px;color:var(--navy)}
-@media(max-width:850px){.screenshot-grid{grid-template-columns:repeat(2,1fr)}.screenshot-grid img{height:320px}}
-@media(max-width:480px){.screenshot-grid{grid-template-columns:1fr 1fr;gap:10px}.screenshot-grid img{height:245px}}
+@media(max-width:850px){.screenshot-grid{grid-template-columns:repeat(2,minmax(0,240px));justify-content:center}.screenshot-grid img{height:320px}}
+@media(max-width:480px){.screenshot-grid{grid-template-columns:minmax(0,320px);justify-content:center;gap:14px}.screenshot-grid img{height:245px}}
 
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
-  <a class="brand" href="#home" aria-label="GoForService home"><img class="brand-logo" src="goforservice-logo.png" alt="GoForService logo"><span>GoForService<small>YOUR SERVICE. YOUR CHOICE.</small></span></a>
+  <a class="brand" href="#home" aria-label="GoForService home"><img class="brand-logo" src="assets/goforservice-logo.png" alt="GoForService logo"><span>GoForService<small>YOUR SERVICE. YOUR CHOICE.</small></span></a>
   <nav><a href="#how">How it works</a><a href="#services">Services</a><a href="#screenshots">Screenshots</a><a href="#apps">Apps & Portals</a><a href="#safety">Trust & Safety</a></nav>
   <a class="nav-cta" href="#apps">Open platforms ↗</a>
 </div></header>
@@ -78,9 +78,10 @@ section{padding:78px 0}.section-head{text-align:center;max-width:740px;margin:0 
 <div class="section-head"><div class="kicker">Inside the apps</div><h2>GoForService app screenshots</h2>
 <p>Real interface screenshots supplied for the customer and partner experiences.</p></div>
 <div class="screenshot-grid">
- <figure><img src="customer-welcome.png" alt="GoForService welcome screen"><figcaption>Customer & worker welcome</figcaption></figure>
- <figure><img src="customer-login.png" alt="GoForService login screen"><figcaption>Account login</figcaption></figure>
- <figure><img src="partner-home.png" alt="GoForService partner home dashboard"><figcaption>Partner home dashboard</figcaption></figure>
+ <figure><img src="assets/customer-welcome.png" alt="GoForService welcome screen"><figcaption>Customer & worker welcome</figcaption></figure>
+ <figure><img src="assets/customer-login.png" alt="GoForService login screen"><figcaption>Account login</figcaption></figure>
+ <figure><img src="assets/partner-home.png" alt="GoForService partner home dashboard"><figcaption>Partner home dashboard</figcaption></figure>
+ 
 </div></div></section>
 
 <section><div class="wrap"><div class="section-head"><div class="kicker">Built for every role</div><h2>One connected service ecosystem</h2><p>Separate experiences for customers, individual technicians, service companies and the GoForService operations team.</p></div>
